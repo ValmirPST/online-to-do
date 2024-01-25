@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,800&display=swap');
+
+:root {
+  --primary-color: rgb(20, 90, 100);
+  --primary-color-darker: rgb(12, 55, 70);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0 solid black;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 640px;
+  margin: 4rem auto;
+  background-color: #fff;
+  padding: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.tasks li {
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.deleteButton {
+  height: 100%;
+  padding: 0 0.5rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 1px solid var(--primary-color-darker);
+  margin-left: 0.5rem;
+  position: absolute;
+  /* top: 25%; */
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+form input, form label, form button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 1rem;
+  height: 2.5rem;
+  padding: 0 1rem;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 2.2rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: var(--primary-color-darker);
+}
+
+form button:active {
+  background-color: #000;
+}
